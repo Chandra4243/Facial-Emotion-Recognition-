@@ -29,9 +29,10 @@ NumPy: For numerical operations.
 Matplotlib: For visualizing images and results.
 
 Dataset
+
 The model is trained on the Face Expression Recognition Dataset.
 
-Source: Available on Kaggle and cloned from this GitHub repository.
+Source: Available on Kaggle.
 
 The dataset contains 28,821 training images and 7,066 validation images.
 
@@ -41,10 +42,9 @@ Setup and Usage
 1. Installation
 Clone the dataset and install the required Python libraries:
 
-Bash
+Dataset
 
-# Clone the dataset repository
-git clone https://github.com/parth1620/Facial-Expression-Dataset.git
+available at https://www.kaggle.com/datasets/jonathanoheix/face-expression-recognition-dataset
 
 # Install necessary packages
 pip install torch torchvision timm
@@ -58,7 +58,7 @@ LR = 0.001
 BATCH_SIZE = 32
 EPOCHS = 15
 DEVICE ='cuda'
-MODEL_NAME = 'efficientnet_b0'
+MODEL_NAME = 'efficientnet_b1'
 The training loop will run for 15 epochs, and the best model weights will be saved as best_model.pt based on the lowest validation loss.
 
 3. Inference
