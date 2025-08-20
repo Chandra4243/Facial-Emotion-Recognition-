@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-F%FFacial Expression Recognition 🎭
+Facial Expression Recognition 🎭
 A web-based application that utilizes a deep learning model to recognize and classify human facial expressions from an uploaded image. The project combines a PyTorch backend, a Flask server, and a responsive front-end.
 
 ✨ Features \& Technology Stack
@@ -83,6 +82,11 @@ The notebook also includes a section demonstrating how to load the saved model a
 
 
 =======
+
+
+For Training Model
+
+
 Facial Expression Recognition using PyTorch
 
 This project builds a deep learning model to classify human facial expressions into one of seven categories: angry, disgust, fear, happy, neutral, sad, and surprise. It leverages transfer learning with a pre-trained EfficientNet-B1 model and is implemented in PyTorch. The notebook covers the complete workflow from data loading and augmentation to training, validation, and inference on a new image.
@@ -146,7 +150,7 @@ Python
 
 LR = 0.001
 BATCH_SIZE = 32
-EPOCHS = 15
+EPOCHS = 40
 DEVICE ='cuda'
 MODEL_NAME = 'efficientnet_b1'
 The training loop will run for 15 epochs, and the best model weights will be saved as best_model.pt based on the lowest validation loss.
@@ -160,10 +164,10 @@ The model uses EfficientNet-B1, a powerful and efficient convolutional neural ne
 Results
 The model was trained for 15 epochs, achieving a validation accuracy of approximately 69.2%. The training progress, including loss and accuracy per epoch, is logged in the notebook output. The saved best_model.pt corresponds to the epoch with the lowest validation loss.
 
+
 Author
-Chandrabhushan Upadhyay
+©️ Chandrabhushan Upadhyay
 
 Contact: chandr4243@gmail.com
 
 LinkedIn: www.linkedin.com/in/chandr34
->>>>>>> 0efd646ac88b94a940014297e8b98fe13fa8451f
