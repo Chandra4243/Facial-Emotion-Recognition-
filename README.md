@@ -36,7 +36,7 @@ pip (Python package installer)
 Installation \& Setup
 Clone the Repository:
 
-git clone https://github.com/your-username/facial-expression-recognition.git
+!git clone https://github.com/parth1620/Facial-Expression-Dataset.git
 cd facial-expression-recognition
 
 Create and Activate a Virtual Environment:
@@ -152,8 +152,8 @@ LR = 0.001
 BATCH_SIZE = 32
 EPOCHS = 40
 DEVICE ='cuda'
-MODEL_NAME = 'efficientnet_b1'
-The training loop will run for 15 epochs, and the best model weights will be saved as best_model.pt based on the lowest validation loss.
+MODEL_NAME = 'efficientnet_b4'
+The training loop will run for 40 epochs, and the best model weights will be saved as best_model.pt based on the lowest validation loss.
 
 3. Inference
 The final section of the notebook demonstrates how to load the saved best_model.pt and perform inference on a single image from the validation set. The view_classify function provides a clear visualization of the model's prediction probabilities.
@@ -162,7 +162,7 @@ Model Architecture
 The model uses EfficientNet-B1, a powerful and efficient convolutional neural network, with weights pre-trained on the ImageNet dataset. This transfer learning approach allows the model to achieve high accuracy with less training time. The final classifier layer was replaced with a new one tailored for the 7 expression classes in our dataset.
 
 Results
-The model was trained for 15 epochs, achieving a validation accuracy of approximately 69.2%. The training progress, including loss and accuracy per epoch, is logged in the notebook output. The saved best_model.pt corresponds to the epoch with the lowest validation loss.
+The model was trained for 40 epochs, achieving a validation accuracy of approximately 82.2%. The training progress, including loss and accuracy per epoch, is logged in the notebook output. The saved best_model.pt corresponds to the epoch with the lowest validation loss.
 
 
 Author
